@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Napoleon IT Junior School </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="shortcut icon" href="https://napoleonit.ru/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="main-header">
+    <div class="container">
+        <a href="#" class="logo">
+            <!-- <svg width="170" height="14" viewBox="0 0 170 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M105.356 6.52549C105.256 10.1138 106.962 12.8039 110.072 13.7005C111.183 14.0152 112.35 14.0829 113.49 13.8989C116.791 13.4005 118.9 10.8105 119.101 7.22381C119.339 3.97962 117.24 1.01937 114.084 0.148762C112.922 -0.0495873 111.735 -0.0495873 110.573 0.148762C107.535 0.781438 105.358 3.44197 105.356 6.52549ZM112.381 2.23882C114.957 2.32256 116.977 4.46488 116.893 7.02382V7.41724C116.848 9.07839 115.91 10.5883 114.437 11.3749C112.963 12.1615 111.178 12.1044 109.758 11.2253C108.338 10.3462 107.501 8.7795 107.563 7.1189V6.72056C107.647 4.16162 109.804 2.15508 112.381 2.23882Z"
+                      fill="black"/>
+                <path d="M2.14793 4.56979V13.2231H0V0C0.409049 0.29271 6.44546 5.73583 9.20949 8.14789L9.82222 8.73171V0.19514H11.9718V13.4167C11.5628 13.1304 5.72332 7.7784 2.96771 5.25118C2.71456 5.00309 2.44038 4.77519 2.14793 4.56979Z"
+                      fill="black"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M38.702 13.4167V9.32447C40.1601 9.32447 41.6181 9.32447 42.8671 9.2243C45.7832 9.02396 47.6576 7.42781 47.8666 5.03193C48.0739 2.44065 46.7204 0.44053 44.0133 0.141662C41.5136 0.0414918 39.0138 -0.0586783 36.5141 0.0414918V13.4167H38.702ZM38.8031 7.32764V2.03668C40.2269 1.96904 41.654 2.00252 43.0727 2.13685H43.3845C44.7348 2.27808 45.7124 3.43816 45.5725 4.73307V4.99252C45.5537 6.29841 44.4353 7.34316 43.0727 7.32764C42.1046 7.39415 41.1826 7.37234 40.2455 7.35017C39.7712 7.33895 39.293 7.32764 38.8031 7.32764Z"
+                      fill="black"/>
+                <path d="M127.854 4.56979V13.2231H125.704V0C126.115 0.29271 132.458 6.02854 135.425 8.7509V0.19514H137.676V13.4167C137.267 13.1256 131.434 7.7784 128.775 5.34715L127.854 4.56979Z"
+                      fill="black"/>
+                <path d="M163.217 13.4167V2.00138H158.627V0H170V1.90255H165.523V13.4167H163.217Z" fill="black"/>
+                <path d="M150.246 13.4167V0H152.641V13.3211H150.246V13.4167Z" fill="black"/>
+                <path d="M99.3662 0V1.90255H91.4526V5.80648H98.1335V7.70902H91.4526V11.4136H99.3662V13.4167H89.1901V0H99.3662Z"
+                      fill="black"/>
+                <path d="M73.6268 0H75.789V11.4955H83.2042V13.4167H73.6268V0Z" fill="black"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M53.2786 6.5248C53.178 10.1127 54.9851 12.8024 57.9935 13.6989C59.1383 14.0159 60.3385 14.0836 61.512 13.8973C64.7152 13.399 66.821 10.8175 67.024 7.22304C67.2614 3.97926 65.1623 1.01938 62.0071 0.148884C60.845 -0.049628 59.6573 -0.049628 58.4952 0.148884C55.457 0.78148 53.2805 3.44167 53.2786 6.5248ZM60.3023 2.24032C62.8776 2.32405 64.8969 4.46536 64.8126 7.02307V7.42136C64.758 9.07591 63.8189 10.5759 62.3489 11.3562C60.8789 12.1366 59.1014 12.0788 57.686 11.2046C56.2706 10.3305 55.4322 8.77269 55.4867 7.11814V6.71985C55.571 4.16214 57.7271 2.15658 60.3023 2.24032Z"
+                      fill="black"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M31.0266 13.805L31.1268 13.9999L28.6319 13.9806L27.6356 11.8264H20.9504L19.9525 13.9806H17.3592L18.5557 11.6298C19.2011 10.3694 19.9496 8.89588 20.6875 7.4433C22.4606 3.95276 24.1723 0.583252 24.243 0.583252C24.3431 0.583252 30.7279 13.1186 31.0266 13.805ZM21.8482 9.78979L21.7481 9.98475L26.7378 9.9783L24.243 4.50014L21.8482 9.78979Z"
+                      fill="black"/>
+            </svg> -->
+            <img src="img/logo-black.svg" class="logo-black" alt="Логотип Napoleon IT">
+            <img src="img/logo-white.svg" class="logo-white" alt="Логотип Napoleon IT">
+        </a>
+        <ul class="menu-header">
+            <li><a href="#about">О школе</a></li>
+            <li><a href="#courses">Курсы</a></li>
+            <li><a href="#for">Для кого</a></li>
+            <li><a href="#targets">Наши цели</a></li>
+            <li><a href="#org">Организатор</a></li>
+            <li><a href="#form" class="button-header mobile-btn">Подать заявку</a></li>
+        </ul>
+        <a href="#form" class="button-header">Подать заявку</a>
+        <div class="header__sandwich sandwich">
+            <div class="sandwich__line sandwich__line--top"></div>
+            <div class="sandwich__line sandwich__line--middle"></div>
+            <div class="sandwich__line sandwich__line--bottom"></div>
+        </div>
+    </div>
+</header>
+<section class="main wow fadeIn" data-wow-delay="0.3s">
+    <div class="container">
+        <h1 class="main-title">Napoleon IT<br> Junior School</h1>
+
+        <picture>
+            <source media="(max-width: 767px)" srcset="img/junior-mobile.png">
+            <img class="main-junior" src="img/junior.png" alt="Лого курса">
+        </picture>
+
+        <div class="course-info-grid wow fadeIn" data-wow-delay="0.3s">
+        <span>Бесплатные<br>
+            курсы</span>
+            <span>ПРЕПОДАВАТЕЛИ<br>
+            ПРАКТИКИ</span>
+            <span>курсы<br>
+            от 1 недели </span>
+            <span>для детей<br>
+            8-15 лет</span>
+            <span>online<br>
+            лекции</span>
+            <span>IT-знания<br>
+            для детей</span>
+        </div>
+    </div>
+
+</section>
+<section class="about wow fadeIn" data-wow-delay="0.3s" id="about">
+    <div class="container">
+    <span class="about-text wow fadeIn" data-wow-delay="0.3s">
+
+
+        <span>Napoleon IT&nbsp;Junior</span>&nbsp;– отличный первый шаг<br/>
+        для вашего ребенка, чтобы начать знакомство<br/>
+        с&nbsp;<nobr>IT-индустрией</nobr>. Широкий спектр образовательных<br> программ позволит подобрать направление<br> обучения согласно предпочтениям ученика
+        <img src="img/about.png" alt="">
+    </span>
+    </div>
+    <div class="wow container fadeIn" data-wow-delay="0.3s" id="courses">
+        <div class="about-accordion">
+            <div class="accordion">
+                <div class="accordion__image">
+                    <img src="img/course.png" class="course-img" alt="">
+                    <img src="img/courses-mobile.png" alt="" class="course-img--mobile">
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accocrdion-title">
+                            <span class="accordion-count">01.</span>
+                            Компьютерная грамотность<br> для детей
+                        </div>
+                    </div>
+                    <div class="accordion-body">
+                    <span class="accordion-date">25.09 - 05.10
+                    </span>
+                        Курс направлен на&nbsp;обучение базовым навыкам поведения<br> и&nbsp;навигации в&nbsp;интернете.
+                        По&nbsp;итогам курса у&nbsp;ребенка появятся своя<br> почта, аккаунты в&nbsp;мессенджерах, а&nbsp;также
+                        умение регистрироваться<br> на&nbsp;сайтах, восстанавливать и&nbsp;держать в&nbsp;секрете свои
+                        пароли.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accocrdion-title">
+                            <span class="accordion-count">02.</span>
+                            Дополненная реальность
+                        </div>
+                    </div>
+                    <div class="accordion-body">
+                    <span class="accordion-date accordion-date-small">05.10
+                    </span>
+                        Ваш ребенок научится создавать дополненную реальность при помощи нескольких программ и&nbsp;языка
+                        программирования C#.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accocrdion-title">
+                            <span class="accordion-count">03.</span>
+                            Python. Основы
+                        </div>
+                    </div>
+                    <div class="accordion-body">
+                    <span class="accordion-date">Уже скоро
+                    </span>
+                        Курс поможет без труда начать программировать на&nbsp;одном из&nbsp;самых популярных языков.
+                        Собственный сайт, игры,
+                        <nobr>чат-бот</nobr>&nbsp;&mdash; все это ребенок сможет сделать по&nbsp;завершении курса юного
+                        разработчика.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accocrdion-title">
+                            <span class="accordion-count">04.</span>
+                            Английский язык в IT
+                        </div>
+                    </div>
+                    <div class="accordion-body">
+                    <span class="accordion-date">Уже скоро
+                    </span>
+                        Этот курс поможет развить навыки чтения, произношения и<br> аудирования на&nbsp;английском
+                        языке. Дети узнают, как<br> английский язык используется в&nbsp;программировании и&nbsp;даже<br>
+                        заведут свой авторский
+                        <nobr>видео-дневник</nobr>
+                        , чтобы без страха<br> научиться говорить на&nbsp;английском.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accocrdion-title">
+                            <span class="accordion-count">05.</span>
+                            3D моделирование
+                        </div>
+                    </div>
+                    <div class="accordion-body">
+                    <span class="accordion-date">Уже скоро
+                    </span>
+                        Данный курс развивает пространственное мышление и&nbsp;учит мыслить нестандартно. По&nbsp;итогам
+                        курса помимо навыков 3D моделирования каждый ученик получит собственное портфолио с&nbsp;готовыми
+                        для печати на&nbsp;3D принтере моделями.*
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accocrdion-title">
+                            <span class="accordion-count">06.</span>
+                            Экспериментальная<br> физика в Unity
+                        </div>
+                    </div>
+                    <div class="accordion-body">
+                    <span class="accordion-date">Уже скоро
+                    </span>
+                        Создание игр с&nbsp;умом. Возможность получить и&nbsp;применить на&nbsp;практике реальные знания
+                        по&nbsp;физике и&nbsp;механике. Идеальный курс для юных инженеров или создателей игр.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accocrdion-title">
+                            <span class="accordion-count">07.</span>
+                            Интернет вещей
+                        </div>
+                    </div>
+                    <div class="accordion-body">
+                    <span class="accordion-date">Уже скоро
+                    </span>
+                        Сборка и&nbsp;программирование умных гаджетов и&nbsp;элементов умного дома с&nbsp;использованием
+                        простых и&nbsp;понятных технологий. Курс также подойдет любителям лего, которые мечтают
+                        создавать &laquo;взрослые&raquo; проекты.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accocrdion-title">
+                            <span class="accordion-count">08.</span>
+                            Биоинформатика для детей
+                        </div>
+                    </div>
+                    <div class="accordion-body">
+                    <span class="accordion-date">Уже скоро
+                    </span>
+                        Одно из&nbsp;самых перспективных современных направлений в&nbsp;сфере IT. Ваш ребенок узнает о&nbsp;строении
+                        белков, генах и&nbsp;поиске лекарств, научатся анализировать данные.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accocrdion-title">
+                            <span class="accordion-count">09.</span>
+                            Проектный менеджмент
+                        </div>
+                    </div>
+                    <div class="accordion-body">
+                    <span class="accordion-date">Уже скоро
+                    </span>
+                        Курс поможет развить лидерские качества в&nbsp;рамках востребованной специальности. Создание
+                        собственного проекта, от, А&nbsp;до&nbsp;Я, изучение механизмов эффективного взаимодействия с&nbsp;людьми,
+                        управления и&nbsp;проектирования.
+                    </div>
+                    <!-- <img src="img/smile.png" alt="" class="accordion__img-bg-smile"> -->
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accocrdion-title">
+                            <span class="accordion-count">10.</span>
+                            SMM
+                        </div>
+                    </div>
+                    <div class="accordion-body">
+                    <span class="accordion-date">Уже скоро
+                    </span>
+                        Всем юным блогерам сюда! Контент и&nbsp;продвижение в&nbsp;социальных сетях еще никогда не&nbsp;были
+                        такими простыми и&nbsp;понятными. Курс предусматривает обучение не&nbsp;только маркетингу, но&nbsp;и&nbsp;созданию
+                        контента, развитию вкуса и&nbsp;навыков грамотной письменной речи.
+                    </div>
+
+                </div>
+                <img src="img/smile.png" alt="" class="accordion__img-bg-smile">
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="for wow fadeIn" data-wow-delay="0.3s" id="for">
+    <div class="container">
+        <span class="subtitle">Для кого</span>
+        <span>Для школьников любого возраста<br>
+            <img src="img/for.png" alt="">
+            и с любым уровнем знаний, на основании<br> которых формируются группы.</span>
+        <span>Наши курсы помогут сформировать<br> понимание  &nbsp;не только о IT-индустрии,<br>
+            но и о том, в каком направлении<br> развиваться дальше.</span>
+    </div>
+</section>
+<section>
+    <div class="gallery-wrap">
+        <img src="img/collage.png" alt="" class="collage-children-dt">
+
+        <div class="gallery-mobile" id="video-wrap">
+            <img src="img/mobile-1.jpg" srcset="img/mobile-1@2x.jpg 2x" alt="Фото детей">
+            <img src="img/mobile-2.jpg" srcset="img/mobile-2@2x.jpg 2x" alt="Фото детей">
+            <img src="img/mobile-3.jpg" srcset="img/mobile-3@2x.jpg 2x" alt="Фото детей">
+            <img src="img/mobile-4.jpg" srcset="img/mobile-4@2x.jpg 2x" alt="Фото детей">
+            <img src="img/mobile-5.jpg" srcset="img/mobile-5@2x.jpg 2x" alt="Фото детей">
+        </div>
+        <!-- <div class="one-photo-line f-just-wrap">
+            <div class="item-gallery one"><img src="img/1.png" alt=""></div>
+            <div class="item-gallery two"><img src="img/2.png" alt=""></div>
+            <div class="item-gallery three"><img src="img/3.png" alt=""></div>
+        </div>
+        <div class="one-photo-line f-just-wrap">
+            <div class="item-gallery four"><img src="img/32.png" alt=""></div>
+            <div class="item-gallery five"><img src="img/4.png" alt=""></div>
+            <div class="item-gallery six"><img src="img/5.png" alt=""></div>
+            <div class="item-gallery seven"><img src="img/6.png" alt=""></div>
+        </div> -->
+    </div>
+</section>
+<section class="target wow fadeIn" data-wow-delay="0.3s" id="targets">
+    <div class="container challenge-wrap">
+        <img class="challenge-img" src="img/challenge.png" alt="">
+    </div>
+    <div class="container">
+        <div class="target-grid">
+            <div class="target-item wow fadeIn" data-wow-delay="0.3s">
+                <span class="target-count">01.</span>
+                <span class="target-title">Воспитать<br>
+                    цифровое<br> поколение</span>
+            </div>
+            <div class="target-item wow fadeIn" data-wow-delay="0.3s">
+                <span class="target-count">02.</span>
+                <span class="target-title">Показать, <br>
+                    что IT – это <br>
+                    не сложно</span>
+            </div>
+            <div class="target-item wow fadeIn" data-wow-delay="0.3s">
+                <span class="target-count">03.</span>
+                <span class="target-title">Подготовить<br> кадры для<br> будущего</span>
+                <img src="img/sh.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="black-back wow fadeIn" data-wow-delay="0.3s" id="org">
+    <div class="container wow fadeIn" data-wow-delay="0.3s">
+        <div class="curator-wrap">
+            <div class="flex-wrap-curator-body">
+                <img src="img/anna.png" alt="">
+                <div class="curator-info">
+                    <span class="curator-name">Анна Рязанова</span>
+                    <span class="curator-job">Куратор<br> Napoleon IT Junior</span>
+                    <span class="curator-info-text">ЧелГУ, магистратура "Педагогическое образование"<br>
+                        4 года работы с детьми</span>
+                </div>
+            </div>
+            <div class="curator-info-text--mobile">
+                ЧелГУ, магистратура<br> "Педагогическое образование"<br>
+                4 года работы с детьми
+            </div>
+            <!-- <div class="flex-wrap-curator-bottom">
+                <span>Если у вас есть вопрос по курсам, напишите нам!</span>
+                <a href="#" class="btn-vopros">Задать вопрос</a>
+            </div> -->
+        </div>
+    </div>
+    <div class="container black-back-wrap-star wow fadeIn" data-wow-delay="0.3s">
+        <h2>Сделайте первый шаг — заполните заявку<br>
+            на поступление и мы подберем для вашего ребенка<br> подходящую программу обучения </h2>
+        <img src="img/star.png" alt="" class="curator__star-bg">
+    </div>
+    <div class="container">
+        <form action="https://functions.yandexcloud.net/d4ernf6cb1odnptnu2bf" enctype="multipart/form-data" name="test" method="post" id="form"
+              class="wow fadeIn" data-wow-delay="0.3s">
+            <input type="hidden" name="ispring_department" value="ca6c6c28-b452-11ea-83f6-ee13d6acbb3f">
+            <input type="hidden" name="ispring_group" value="09eb4de2-b453-11ea-be1a-ee13d6acbb3f">
+            <input type="hidden" name="ispring_course" value="3235bcc4-eced-11ea-a700-62c2de00f543">
+            <input type="hidden" name="huntflow_vacancy" value="2540345">
+            <input type="hidden" name="ispring_course_period" value="24">
+            <div class="form-wrap-grid">
+                <div class="input-group">
+                    <input type="text" placeholder="ФИО" required="" name="first_name">
+                    <input type="text" onfocus="(this.type='date')" style="font-family: 'Ubuntu', sans-serif;" placeholder="Дата рождения" required="" name="bday">
+                    <input type="text" placeholder="Город" required="" name="city">
+                    <input type="text" placeholder="Школа" required="" name="school">
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Имя родителя" required="" name="job">
+                    <input type="tel" placeholder="Номер телефона" pattern="[+]?[0-9]{11}" required="" name="tel">
+                    <input type="email" placeholder="E-mail" required="" name="email">
+                    <select name="course" id="course">
+                        <option></option>
+                        <option value="Компьютерная грамотность">Компьютерная грамотность</option>
+                        <option value="Дополненная реальность">Дополненная реальность</option>
+                        <!-- <option value="Английский язык в IT">Английский язык в IT</option>
+                        <option value="3D моделирование">3D моделирование</option>
+                        <option value="Экспериментальная физика в Unity">Экспериментальная физика в Unity</option>
+                        <option value="Интернет вещей">Интернет вещей</option>
+                        <option value="Биоинформатика для детей">Биоинформатика для детей</option>
+                        <option value="Проектный менеджмент">Проектный менеджмент</option>
+                        <option value="SMM">SMM</option>
+                        <option value="Python. Основы">Python. Основы</option> -->
+                    </select>
+                </div>
+            </div>
+            <div class="radio-block between-flex">
+                <div class="col-50">
+                    <p class="fs-26">Как ребенок оценивает свои знания<br>
+                        в программировании?</p>
+                </div>
+                <div class="col-50 radio-tut between-flex">
+                    <div class="one-radio-wrap">
+                        <input id="one" type="radio" name="prog" value="Нулевой" checked="checked">
+                        <label class="fs-20 bold uppercase" for="one">Нулевой</label>
+                    </div>
+                    <div class="one-radio-wrap">
+                        <input id="two" type="radio" name="prog" value="Начальный">
+                        <label class="fs-20 bold uppercase" for="two">Начальный</label>
+                    </div>
+                    <div class="one-radio-wrap">
+                        <input id="three" type="radio" name="prog" value="Средний">
+                        <label class="fs-20 bold uppercase" for="three">Средний</label>
+                    </div>
+                    <div class="one-radio-wrap">
+                        <input id="four" type="radio" name="prog" value="Продвинутый">
+                        <label class="fs-20 bold uppercase" for="four">Продвинутый</label>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <p class="fs-26">Как ребенок оценивает свои знания<br>
+                        в математике?</p>
+                </div>
+                <div class="col-50 radio-tut between-flex">
+                    <div class="one-radio-wrap">
+                        <input id="one1" type="radio" name="math" value="Нулевой" checked="checked">
+                        <label class="fs-20 bold uppercase" for="one1">Нулевой</label>
+                    </div>
+                    <div class="one-radio-wrap">
+                        <input id="two1" type="radio" name="math" value="Начальный">
+                        <label class="fs-20 bold uppercase" for="two1">Начальный</label>
+                    </div>
+                    <div class="one-radio-wrap">
+                        <input id="three1" type="radio" name="math" value="Средний">
+                        <label class="fs-20 bold uppercase" for="three1">Средний</label>
+                    </div>
+                    <div class="one-radio-wrap">
+                        <input id="four1" type="radio" name="math" value="Продвинутый">
+                        <label class="fs-20 bold uppercase" for="four1">Продвинутый</label>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <p class="fs-26">Как ребенок оценивает свои знания<br>
+                        в английском языке?</p>
+                </div>
+                <div class="col-50 radio-tut between-flex lm">
+                    <div class="one-radio-wrap">
+                        <input id="one2" type="radio" name="english" value="Нулевой" checked="checked">
+                        <label class="fs-20 bold uppercase" for="one2">Нулевой</label>
+                    </div>
+                    <div class="one-radio-wrap">
+                        <input id="two2" type="radio" name="english" value="Начальный">
+                        <label class="fs-20 bold uppercase" for="two2">Начальный</label>
+                    </div>
+                    <div class="one-radio-wrap">
+                        <input id="three2" type="radio" name="english" value="Средний">
+                        <label class="fs-20 bold uppercase" for="three2">Средний</label>
+                    </div>
+                    <div class="one-radio-wrap">
+                        <input id="four2" type="radio" name="english" value="Продвинутый">
+                        <label class="fs-20 bold uppercase" for="four2">Продвинутый</label>
+                    </div>
+                </div>
+            </div>
+            <div class="agreement">
+                <input type="checkbox" name="agreement" id="agreement" checked="">
+                <label class="agreement-label" for="agreement">Я хочу получать информационную рассылку<br>
+                    от Napoleon IT Junior</label>
+            </div>
+            <hr>
+            <div class="form-bottom">
+                <span>Нажимая кнопку «Отправить»,<br> вы соглашаетесь с <a href="https://napoleonit.ru/legal.html"
+                                                                           target="_blank"> обработкой данных</a> </span>
+                <button type="submit" id="button-submit" class="black-btn">Отправить</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer__wrap wow fadeIn" data-wow-delay="0.3s">
+        <a href="mailto:junior@napoleonit.ru" class="footer__mail">junior_school@napoleonit.ru</a>
+        <a href="tel:+79507304787" class="footer__phone">+7 950 730 47 87</a>
+        <div class="footer__social-and-logo">
+            <ul class="footer__social social__list">
+                <li class="social__item">
+                    <a href="https://vk.com/public198579392" class="social__link">VK</a>
+                </li>
+                <li class="social__item">
+                    <a href="https://www.facebook.com/groups/2817942098439512/" class="social__link">Fb</a>
+                </li>
+                <li class="social__item">
+                    <a href="https://www.instagram.com/napoleonit.junior/?hl=ru" class="social__link">Inst</a>
+                </li>
+            </ul>
+            <div class="footer__logo">
+                <img src="img/footer-logo.svg" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
