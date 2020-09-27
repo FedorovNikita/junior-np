@@ -32,6 +32,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+section {
+    min-width: 1220px;
+}
+
 body {
 	line-height: 1;
 }
@@ -1033,6 +1037,12 @@ color: #000000;
 .flex-wrap-curator-body {
     display: flex;
 }
+
+.curator-image {
+    align-items: flex-start;
+    width: 155px;
+    height: 183px;
+}
 .curator-info {
     display: flex;
     flex-direction: column;
@@ -1467,6 +1477,7 @@ input {
 }
 
 .footer {
+    min-width: 1220px;
     padding-top: 150px;
     padding-bottom: 150px;
     background-color: #000000;
@@ -1587,8 +1598,13 @@ select:-webkit-autofill:focus {
 .container {
     padding: 0 35px;
 }
+
+.container-curator {
+    padding: 0 18px;
+}
 section {
     width: 100%;
+    min-width: auto;
     box-sizing: border-box;
 }
 
@@ -2242,6 +2258,7 @@ hr {
 }
 
 .footer {
+    min-width: auto;
     margin-top: -2px;
     padding-top: 125px;
     padding-bottom: 30px;
