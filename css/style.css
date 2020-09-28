@@ -1353,6 +1353,7 @@ hr {
     max-height: 100%;
     padding-left: 60px;
     padding-top: 54px;
+    padding-bottom: 57px;
 }
 .selectize-dropdown .option{
     padding: 5px 8px;
@@ -1361,6 +1362,10 @@ hr {
     margin-bottom: 31px;
     cursor: pointer;
     transition: .4s;
+}
+
+.selectize-dropdown .option:last-child {
+    margin-bottom: 0;
 }
 .selectize-dropdown .option:hover,
 .selectize-dropdown .active {
@@ -2119,7 +2124,7 @@ input::placeholder {
     content: url('../img/arrow-mobile.svg');
     border: none;
     top: 7px;
-    right: 17px;
+    right: 10px;
     transform: rotate(0deg);
     width: 16px;
     height: 16px;
@@ -2128,7 +2133,7 @@ input::placeholder {
 
 .selectize-control.single .selectize-input.dropdown-active:after {
     top: 40%;
-    right: 25px;
+    right: 18px;
     transform: rotate(-180deg) !important;
 }
 
