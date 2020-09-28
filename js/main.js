@@ -53,9 +53,12 @@ $('.menu-header a,.button-header').on('click', function () {
     var dest = el.attr('href'); // получаем направление
     if (dest !== undefined && dest !== '') { // проверяем существование
         $('html').animate({
-                scrollTop: $(dest).offset().top - 100 // прокручиваем страницу к требуемому элементу
+                scrollTop: $(dest).offset().top - 80 // прокручиваем страницу к требуемому элементу
             }, 500 // скорость прокрутки
         );
+        if (window.pageYOffset > org.offsetTop) {
+            mainHeader.classList.add('header-dark');
+        }
         $('body').removeClass('show-mobile-menu');
     }
     return false;
