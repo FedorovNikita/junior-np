@@ -68,32 +68,31 @@ $('form').on('submit', (event) => {
     let form = $(event.target);
     let formData = new FormData(form[0]);
 
-    // console.log(formData)
-    for(let [name, value] of formData) {
-        console.log(`${name} = ${value}`); // key1=value1, потом key2=value2
-    }
+    // for(let [name, value] of formData) {
+    //     console.log(`${name} = ${value}`); // key1=value1, потом key2=value2
+    // }
 
-    // $.ajax({
-    //     type: "post",
-    //     url: "https://functions.yandexcloud.net/d4ernf6cb1odnptnu2bf",
-    //     data: formData,
-    //     enctype: 'multipart/form-data',
-    //     processData: false,
-    //     contentType: false,
-    //     cache: false,
-    //     success(msg) {
-    //         if (msg === '{"message": "ok"}') {
-    //             // location.replace("success.html");
-    //             $('#button-submit').prop("disabled", true);
-    //             $('#button-submit').text("Заявка принята!");
+    $.ajax({
+        type: "post",
+        url: "https://functions.yandexcloud.net/d4ernf6cb1odnptnu2bf",
+        data: formData,
+        enctype: 'multipart/form-data',
+        processData: false,
+        contentType: false,
+        cache: false,
+        success(msg) {
+            if (msg === '{"message": "ok"}') {
+                // location.replace("success.html");
+                $('#button-submit').prop("disabled", true);
+                $('#button-submit').text("Заявка принята!");
 
-    //         } else if (msg == "success-ask") {
-    //             console.log("Вопрос отправлен");
-    //             $(".ask button").text('Вопрос отправлен');
-    //             $('.ask button').prop('disabled', true);
-    //         }
-    //     }
-    // })
+            } else if (msg == "success-ask") {
+                console.log("Вопрос отправлен");
+                $(".ask button").text('Вопрос отправлен');
+                $('.ask button').prop('disabled', true);
+            }
+        }
+    })
 });
 
 $('.accordion').accordion({
@@ -136,11 +135,9 @@ selec.addEventListener('click', () => {
     selec.classList.toggle('input-active');
     selec.classList.toggle('focus');
     if (selec.classList.contains('dropdown-active')) {
-        console.log('click')
         selectizeDropdown.style.display = "block";
     } else {
         selectizeDropdown.style.display = "none";
-        console.log('not click')
     }
 })
 
